@@ -14,25 +14,24 @@ banner = r'''
 '''
 
 def search_rank():
-	url = 'https://distrowatch.com/'
+    url = 'https://distrowatch.com/'
 
-	with urlopen(url) as response:
-		html = response.read()
+    with urlopen(url) as response:
+        html = response.read()
+        page = Soup(html, 'html.parser')
+        distros = page.find_all("td", class_="phr2")
+        pos = 1
+        print('------------------')
 
-		page = Soup(html, 'html.parser')
-		distros = page.find_all("td", class_="phr2")
-		pos = 1
-		print('------------------')
+        for i in range(number):
+            print("|{}| {}".format(pos, distros[i].text))
+            print("------------------")
+            pos += 1
 
-		for i in range(number):
-			print("|{}| {}".format(pos, distros[i].text))
-			print("------------------")
-			pos += 1
-
-			
+            
 if __name__ == '__main__':
-	print(banner)
-	number = int(input("Enter the number of positions: "))
-	print("Please wait while we fetch the data for you...")
-	print('')
-	search_rank()
+    print(banner)
+    number = int(input("Enter the number of positions: "))
+    print("Please wait while we fetch the data for you...")
+    print('')
+    search_rank()
