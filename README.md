@@ -8,18 +8,18 @@ Data is taken from [DistroWatch](https://distrowatch.com/).
 
 <img src="image/distros-rank.png" alt="">
 
-## Installation of dependencies
+## Dependencies
 
 ```
-$ pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ## Usage
 
 ```
-$ python rank.py
+python rank.py
 ```
 
-## LICENSE
+## License
 
 This project is licensed under the terms of the [MIT license](LICENSE).
