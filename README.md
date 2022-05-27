@@ -6,7 +6,7 @@ Data is taken from [DistroWatch](https://distrowatch.com/).
 
 ## Screenshot
 
-<img src="image/distros-rank.png" alt="">
+<img src="screenshot/distros-rank.png" alt="">
 
 ## Dependencies
 
