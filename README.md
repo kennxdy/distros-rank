@@ -17,7 +17,7 @@ pip3 install -r requirements.txt
 ## Usage
 
 ```
-python3 rank.py
+python3 linstairs.py
 ```
 
 ## License
