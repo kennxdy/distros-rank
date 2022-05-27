@@ -11,13 +11,13 @@ Data is taken from [DistroWatch](https://distrowatch.com/).
 ## Dependencies
 
 ```
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 ## Usage
 
 ```
-python rank.py
+python3 rank.py
 ```
 
 ## License
