@@ -1,6 +1,6 @@
 # Linstairs
 
-See the ranking of Linux distributions from [DistroWatch](https://distrowatch.com/).
+See the ranking of Linux distributions from [DistroWatch.com](https://distrowatch.com/).
 
 ## Screenshot
 
