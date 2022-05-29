@@ -1,12 +1,10 @@
-# Distros Rank
+# Linstairs
 
-Python software to check the rank of Linux distributions.
-
-Data is taken from [DistroWatch](https://distrowatch.com/).
+See the ranking of Linux distributions from [DistroWatch](https://distrowatch.com/).
 
 ## Screenshot
 
-<img src="screenshot/distros-rank.png" alt="">
+<img src="screenshot/linstairs.png" alt="Linstairs screenshot">
 
 ## Dependencies
 
