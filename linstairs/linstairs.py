@@ -29,6 +29,9 @@ def search_rank():
 
 if __name__ == '__main__':
     print(banner)
-    number = int(input("Enter the number of positions: "))
-    print("Please wait while we fetch the data for you...\n")
-    search_rank()
+    try:
+        number = int(input("Number of positions: "))
+        print("Please wait while we fetch the data for you...\n")
+        search_rank()
+    except ValueError:
+        print("Enter a number of positions you would like to see!")
