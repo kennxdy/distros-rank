@@ -2,7 +2,6 @@ from urllib.request import urlopen
 
 from bs4 import BeautifulSoup
 
-
 banner = r"""
  __                            __
 /\ \       __                 /\ \__           __
@@ -16,23 +15,25 @@ banner = r"""
 """
 
 
-def search_rank():
+def search_rank(position_number):
     url = 'https://distrowatch.com/'
     with urlopen(url) as response:
         html = response.read()
         page = BeautifulSoup(html, 'html.parser')
-        distros = page.find_all('td', class_='phr2')
-        position = 1
-        for i in range(number):
-            print("|{}| {}".format(position, distros[i].text))
-            position += 1
+        distributions = page.find_all('td', class_='phr2')
+        rank = {}
+        for number in range(position_number):
+            rank.update({(number + 1): distributions[number].text})
+        return rank
 
 
 if __name__ == '__main__':
     print(banner)
     try:
-        number = int(input("Number of positions: "))
-        print("Please wait while we fetch the data for you...\n")
-        search_rank()
+        number = int(input('Number of positions: '))
+        print('Please wait while we fetch the data for you...\n')
+        rank = search_rank(number)
+        for position in rank:
+            print('|{}| {}'.format(position, rank[position]))
     except ValueError:
-        print("Enter a number of positions you would like to see!")
+        print('Enter a number of positions you would like to see!')
