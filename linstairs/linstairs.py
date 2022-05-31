@@ -27,7 +27,7 @@ def search_rank(position_number):
         return rank
 
 
-if __name__ == '__main__':
+def main():
     print(banner)
     try:
         number = int(input('Number of positions: '))
@@ -37,3 +37,7 @@ if __name__ == '__main__':
             print('|{}| {}'.format(position, rank[position]))
     except ValueError:
         print('Enter a number of positions you would like to see!')
+
+
+if __name__ == '__main__':
+    main()
