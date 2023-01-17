@@ -1,6 +1,8 @@
 # Linstairs
 
-Check out the rank of Linux distributions at a glance from the website [DistroWatch.com](https://distrowatch.com/).
+Check out the rank of Linux distributions at a glance.
+
+Source: [DistroWatch.com](https://distrowatch.com/).
 
 ## Screenshot
 
