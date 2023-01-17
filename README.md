@@ -2,7 +2,7 @@
 
 Check out the rank of Linux distributions at a glance.
 
-Source: [DistroWatch.com](https://distrowatch.com/).
+Source: [DistroWatch.com](https://distrowatch.com/)
 
 ## Screenshot
 
