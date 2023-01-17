@@ -1,6 +1,6 @@
 # Linstairs
 
-Scraper that gets the ranking of linux distributions from [DistroWatch.com](https://distrowatch.com/).
+Check out the rank of Linux distributions at a glance from the website [DistroWatch.com](https://distrowatch.com/).
 
 ## Screenshot
 
